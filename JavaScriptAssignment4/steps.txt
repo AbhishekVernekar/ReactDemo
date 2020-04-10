@@ -1,0 +1,15 @@
+1. project.displayProject()
+----> to display the current projects.
+
+2. project.addProject({
+    pid: 103,
+    pname: 'DBMS',
+    status: 'In Progress'
+})
+----> To add a new Project 
+
+3. project.UpdateProject(103)
+---> To update the status of the project based on pid
+
+4. project.deleteProject(103)
+---> To delete the project based on pid.
