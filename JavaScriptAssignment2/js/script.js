@@ -8,6 +8,7 @@ const project = {
     checkProject: function () {
         this.projectList.forEach((project) => {
                 if (project.status === 'complete') {
+                    //this is for test commit.
                     console.log('true');
 
                 } else
