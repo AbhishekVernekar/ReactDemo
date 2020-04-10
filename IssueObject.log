@@ -1,0 +1,7 @@
+var issueList={};
+undefined
+issueList;
+{}__proto__: Object
+console.log(typeof issueList);
+VM185:1 object
+undefined
