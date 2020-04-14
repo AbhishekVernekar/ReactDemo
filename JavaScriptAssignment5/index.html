@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Application Javascript assignment 5</title>
+    <link rel="stylesheet" href="projectAssignment5.css" type="text/css">
+    <h1>Project Application</h1>
+</head>
+<body>
+     <div id="assign5">
+    Project Id <input id="pid" type="number">
+    Project Name <input id="pname" type="text"></br></br>
+    Project Status <select id="pstatus">
+        <option value="inProgress">In Progress</option>
+        <option value="completed">Completed</option>
+    </select>
+    Project Description <input id="pdesc" type="text"></br></br>
+    <button onclick="projects.addNewProject()">Add new project</button>&emsp;
+    <button onclick="projects.displayProjects()">Display existing project</button>&emsp;
+    <button onclick="projectCount.checkProjectCount()">Project counter</button></br>
+
+    <label id="assign5js"></label>
+  </div>
+  <hr/>
+  <table id="projectData" border="1">
+    <tbody>
+        <th>Project Id</th>
+        <th>Project Name</th>
+        <th>Project Status</th>
+        <th>Project Description</th>
+    </tbody>
+</table>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

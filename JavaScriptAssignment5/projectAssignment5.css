@@ -1,0 +1,15 @@
+body{
+    background-color: #cee7df;
+}
+table{
+    width:80%;
+    margin: 0 auto;
+}
+label{
+    color: rgb(255, 0, 0);
+}
+p1{
+  color:rgb(26, 13, 56);
+  font-size: smaller;
+  font-style: italic;
+}
