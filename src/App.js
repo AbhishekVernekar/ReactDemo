@@ -5,7 +5,7 @@ import './App.css';
 function App(props) {
   return (
     <div>
-      <h1>React Assignment 2</h1>
+      <h1>React Assignment 3</h1>
     </div>
   );
 }
