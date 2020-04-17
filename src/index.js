@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './ArrNum';
 import * as serviceWorker from './serviceWorker';
+import ArrNum from './ArrNum';
+import CheckOddEven from './CheckOddEven';
 
-const element = <App name="Happy Programming" />;
 ReactDOM.render(
-    <App />,
+  <React.StrictMode>
+   
+  <ArrNum/> 
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
