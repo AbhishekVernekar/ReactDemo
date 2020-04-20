@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import EmpComp from './EmpComp';
 import * as serviceWorker from './serviceWorker';
 
-const element = <App name="Happy Programming" />;
 ReactDOM.render(
-    <App />,
+  <React.StrictMode>
+  <EmpComp/>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
