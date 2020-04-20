@@ -1,38 +1,32 @@
-import React, { Component } from 'react';
+import Home from './Home.js';
+import About from './About.js';
+import Contact from './Contact.js';
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      clicks: 0,
-      show: true
-    };
-  }
-
-  IncrementItem = () => {
-    this.setState({ clicks: this.state.clicks + 1 });
-  }
-  DecreaseItem = () => {
-    this.setState({ clicks: this.state.clicks - 1 });
-  }
-  ToggleClick = () => {
-    this.setState({ show: !this.state.show });
-  }
-
-  render() {
+function App() {
     return (
-      <div>
-        <button onClick={this.IncrementItem}>Increase by 1 unit</button> &nbsp;
+        <Router>
+            <div>
+                <nav style={{ margin: 10 }}>
+                    <Link to='/' style={{ padding: 10 }}>
+                        Home
+                    </Link>
 
-        <button onClick={this.DecreaseItem}>Decrease by 1 unit</button>
+                    <Link to='/about' style={{ padding: 10 }}>
+                        About
+                    </Link>
 
-        <button onClick={this.ToggleClick}>
-          { this.state.show ? 'Hide' : 'Show' }
-        </button>
-        { this.state.show ? <h2>{ this.state.clicks }</h2> : '' }
-      </div>
-    );
-  }
+                    <Link to='/contact' style={{ padding: 10 }}>
+                        Contact
+                    </Link>
+                </nav>
+                <Route path='/' exact component={Home} />
+                <Route path='/about' component={About} />
+                <Route path='/contact' component={Contact} />
+            </div>
+        </Router>
+    )
 }
 
-export default App;
+export default App
