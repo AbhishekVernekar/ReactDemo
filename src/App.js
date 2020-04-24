@@ -75,11 +75,11 @@ class App extends Component {
 
           </Link>
 
-          <Link to='/home' style={{ padding: 2, color: 'black' }}>
+          <Link to='/home' style={{ padding: 2, color: 'white' }}>
             Home
                     </Link>
                     |
-                    <Link to='/about' style={{ padding: 2, color: 'black' }}>
+                    <Link to='/about' style={{ padding: 2, color: 'white' }}>
             About
                     </Link>
         </nav>
