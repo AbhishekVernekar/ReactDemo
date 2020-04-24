@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import ShowCustomer from './ShowCustomer';
+class App  extends React.Component{
+    render(){
+        var objCustomer=[
+            {CustomerId:1,CustomerName:'Abhishek',CustomerAddress:'India'},
+             {CustomerId:2,CustomerName:'Aamir',CustomerAddress:'Us'},
+             {CustomerId:3,CustomerName:'Sid',CustomerAddress:'India'},
+             {CustomerId:4,CustomerName:'Rajdeep',CustomerAddress:'Abc'},
+             {CustomerId:5,CustomerName:'Amar',CustomerAddress:'India'},
+             {CustomerId:6,CustomerName:'kamal',CustomerAddress:'Uk'}
+        ];
+        return(
+            <div>
+                <ShowCustomer propCustomer={objCustomer}/>
+            </div>
+        );
+    }
 }
 
 export default App;
