@@ -24,7 +24,7 @@ class App extends Component {
       <div>
         <button onClick={this.IncrementItem}>Increase by 1 unit</button> &nbsp;
 
-        <button onClick={this.DecreaseItem}>Decrease by 1 unit</button>
+        <button onClick={this.DecreaseItem}>Decrease by 1 unit</button> &nbsp;
 
         <button onClick={this.ToggleClick}>
           { this.state.show ? 'Hide' : 'Show' }
