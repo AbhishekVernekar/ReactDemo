@@ -5,6 +5,8 @@ import Dashboard from"./components/Dashboard";
 import Header from"./components/Header";
 import AddProject from "./components/projects/AddProject";
 import updateProject from "./components/projects/updateProject";
+import ProjectBoardTask from "./components/ProjectBoardTask";
+import AddProjectBoardTask from "./components/projects/AddProjectBoardTask";
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 import{Provider} from 'react-redux';
@@ -23,6 +25,8 @@ class App extends React.Component {
    <Route path ="/dashboard" component={Dashboard}/>
    <Route path ="/addproject" component={AddProject}/>
    <Route path ="/updateproject/:id" component={updateProject}/>
+   <Route path ="/projectboardtask" component={ProjectBoardTask}/>
+   <Route path ="/addprojectboardtask" component={AddProjectBoardTask}/>
   </Router>
   </Provider>
     );

@@ -23,7 +23,6 @@ class updateProject extends React.Component
     }
 
     componentWillReceiveProps(nextProps){
-        console.log('--------')
         const { id, projectName, description, start_date, end_date } = nextProps.project;
         this.setState({ id, projectName, description, start_date, end_date });
     }

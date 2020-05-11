@@ -10,6 +10,7 @@ class Dashboard extends React.Component
     {
         this.props.getProjects();
     }
+    
     render()
     {
        const {projects}=this.props.projects;
