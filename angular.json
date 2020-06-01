@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CounterAppAngular"
+    }
+  },
+  "defaultProject": "CounterAppAngular",
+  "cli": {
+    "analytics": false
+  }
 }
